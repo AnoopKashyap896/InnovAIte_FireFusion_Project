@@ -127,31 +127,4 @@ FAO (2015) GAUL Global Administrative Unit Layers
 
 Jain, P. et al. (2020) A review of machine learning applications in wildfire science and management
 
-Abatzoglou, J.T. and Williams, A.P. (2016) Impact of anthropogenic climate change on wildefire across western US forests
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Abatzoglou, J.T. and Williams, A.P. (2016) Impact of anthropogenic climate change on wildfire across western US forests
