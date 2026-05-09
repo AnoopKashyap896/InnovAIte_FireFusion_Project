@@ -6,18 +6,18 @@ from .internal.services.forecast_service import ForecastService
 from .internal.services.messaging_service import MessagingService
 from fastapi.middleware.cors import CORSMiddleware
 
-# @asynccontextmanager
-# async def init_lifespan_objects(app: FastAPI):
-#     messaging_service = await MessagingService.create()
-#     forecast_service = ForecastService()
-#
-#     await messaging_service.consume_predictions(forecast_service.on_prediction_message)
-#
-#     yield
-#
-#     await messaging_service.close()
+@asynccontextmanager
+async def init_lifespan_objects(app: FastAPI):
+    messaging_service = await MessagingService.create()
+    forecast_service = ForecastService()
 
-# app = FastAPI(lifespan=init_lifespan_objects)
+    await messaging_service.consume_predictions(forecast_service.on_prediction_message)
+
+    yield
+
+    await messaging_service.close()
+
+app = FastAPI(lifespan=init_lifespan_objects)
 app = FastAPI()
 
 app.add_middleware(
@@ -29,5 +29,5 @@ app.add_middleware(
 )
 
 app.include_router(hello.router)
-# app.include_router(forecast.router)
+app.include_router(forecast.router)
 app.include_router(misinformation_controller.router)
