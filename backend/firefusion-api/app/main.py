@@ -18,7 +18,6 @@ async def init_lifespan_objects(app: FastAPI):
     await messaging_service.close()
 
 app = FastAPI(lifespan=init_lifespan_objects)
-app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
