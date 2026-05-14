@@ -1709,3 +1709,516 @@ a {
     width: 100%;
   }
 }
+/* =========================
+   Laptop Screen Fix
+   Makes dashboard fit 13-15 inch laptop screens
+   ========================= */
+
+@media (min-width: 900px) and (max-width: 1366px) {
+  .sidebar {
+    width: 215px;
+    padding: 14px 12px;
+  }
+
+  .main {
+    margin-left: 215px;
+    width: calc(100% - 215px);
+    padding: 10px;
+  }
+
+  .brand-logo {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+  }
+
+  .brand h1 {
+    font-size: 17px;
+  }
+
+  .brand p {
+    font-size: 10px;
+  }
+
+  .section-title {
+    font-size: 10px;
+    margin: 18px 0 8px;
+  }
+
+  .nav-item {
+    padding: 10px 9px;
+    border-radius: 10px;
+    font-size: 12px;
+  }
+
+  .nav-item span {
+    gap: 8px;
+  }
+
+  .nav-item svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .nav-item b {
+    padding: 3px 7px;
+    font-size: 10px;
+  }
+
+  .ban-card {
+    padding: 12px;
+    margin-top: 18px;
+  }
+
+  .ban-card h3 {
+    font-size: 13px;
+  }
+
+  .ban-card p,
+  .ban-card small {
+    font-size: 10px;
+  }
+
+  .weather-grid {
+    gap: 7px;
+    margin-top: 10px;
+  }
+
+  .info-box {
+    padding: 9px;
+    border-radius: 9px;
+  }
+
+  .info-box p {
+    font-size: 9px;
+  }
+
+  .info-box strong {
+    font-size: 11px;
+  }
+
+  .profile-card {
+    padding: 9px;
+    margin-top: 12px;
+  }
+
+  .profile-card div {
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+  }
+
+  .profile-card strong,
+  .profile-card small,
+  .signout,
+  .version {
+    font-size: 10px;
+  }
+
+  .sidebar-bottom {
+    margin-top: 35px;
+  }
+
+  .topbar {
+    padding: 9px 12px;
+    border-radius: 12px;
+    gap: 8px;
+  }
+
+  .topbar h2 {
+    font-size: 15px;
+  }
+
+  .topbar select,
+  .search {
+    height: 34px;
+    font-size: 11px;
+    border-radius: 9px;
+  }
+
+  .search {
+    width: 280px;
+  }
+
+  .sync {
+    font-size: 10px;
+  }
+
+  .user-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .ff-hero {
+    min-height: 145px;
+    border-radius: 10px;
+  }
+
+  .ff-hero-content {
+    padding: 15px 18px;
+  }
+
+  .ff-hero h1 {
+    font-size: 21px;
+  }
+
+  .ff-hero p {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .ff-summary-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+
+  .ff-summary-card {
+    min-height: 50px;
+    padding: 8px 10px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  .ff-summary-card svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ff-summary-card span {
+    font-size: 9px;
+  }
+
+  .ff-summary-card strong {
+    font-size: 15px;
+  }
+
+  .ff-top-grid {
+    grid-template-columns: 1.15fr 1fr 1.05fr;
+    gap: 7px;
+    margin-top: 7px;
+  }
+
+  .ff-middle-grid {
+    grid-template-columns: 1.05fr 1.35fr;
+    gap: 7px;
+    margin-top: 7px;
+  }
+
+  .ff-panel {
+    padding: 9px;
+    border-radius: 9px;
+  }
+
+  .ff-panel-header,
+  .ff-panel-title-row {
+    margin-bottom: 8px;
+  }
+
+  .ff-panel-header h3,
+  .ff-panel-title-row h3,
+  .ff-map-head h3 {
+    font-size: 12px;
+    gap: 5px;
+  }
+
+  .ff-panel-header h3 svg,
+  .ff-panel-title-row h3 svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .ff-panel-header a,
+  .ff-panel-title-row a {
+    font-size: 9px;
+  }
+
+  .ff-update-list {
+    gap: 7px;
+  }
+
+  .ff-update-card {
+    grid-template-columns: 42px 1fr;
+    gap: 7px;
+    padding: 7px;
+    border-radius: 8px;
+  }
+
+  .ff-agency {
+    width: 38px;
+    height: 38px;
+    font-size: 13px;
+    border-radius: 7px;
+  }
+
+  .ff-update-body {
+    gap: 6px;
+  }
+
+  .ff-update-body h4 {
+    font-size: 10px;
+  }
+
+  .ff-update-body p {
+    font-size: 9px;
+    line-height: 1.25;
+  }
+
+  .ff-update-body small {
+    font-size: 8px;
+  }
+
+  .ff-update-body span {
+    font-size: 8px;
+    padding: 3px 6px;
+  }
+
+  .ff-update-body button {
+    font-size: 8px;
+    padding: 4px 7px;
+    margin-top: 5px;
+  }
+
+  .ff-risk-header {
+    font-size: 9px;
+  }
+
+  .ff-risk-header strong {
+    font-size: 9px;
+    padding: 5px 8px;
+  }
+
+  .ff-risk-meter {
+    height: 7px;
+    margin: 8px 0 10px;
+  }
+
+  .ff-risk-meter span {
+    width: 13px;
+    height: 13px;
+    top: -3px;
+  }
+
+  .ff-metric-grid {
+    gap: 6px;
+  }
+
+  .ff-metric-card {
+    min-height: 52px;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  .ff-metric-card svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ff-metric-card span {
+    font-size: 9px;
+  }
+
+  .ff-metric-card strong {
+    font-size: 11px;
+  }
+
+  .ff-source-row {
+    font-size: 8px;
+    margin-top: 8px;
+  }
+
+  .ff-resource-list {
+    gap: 9px;
+  }
+
+  .ff-resource-info span {
+    font-size: 10px;
+  }
+
+  .ff-resource-info span svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .ff-resource-info b {
+    font-size: 10px;
+  }
+
+  .ff-resource-info small {
+    font-size: 8px;
+  }
+
+  .ff-resource-bar {
+    height: 6px;
+  }
+
+  .ff-legend {
+    font-size: 8px;
+    gap: 9px;
+    margin-top: 9px;
+  }
+
+  .ff-map-area {
+    min-height: 205px;
+  }
+
+  .ff-map-legend {
+    top: 10px;
+    left: 10px;
+    gap: 6px;
+    padding: 8px;
+    font-size: 9px;
+  }
+
+  .ff-victoria-map {
+    inset: 16px 12px 16px 98px;
+  }
+
+  .zone {
+    font-size: 9px;
+    padding: 6px 8px;
+  }
+
+  .zone small {
+    font-size: 8px;
+  }
+
+  .ff-map-btn {
+    left: 10px;
+    bottom: 10px;
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+
+  .ff-chart-panel,
+  .ff-advice-panel,
+  .ff-misinfo-panel {
+    margin-top: 7px;
+  }
+
+  .ff-trend-chart {
+    grid-template-columns: 50px 1fr;
+    min-height: 115px;
+  }
+
+  .ff-y-labels {
+    font-size: 9px;
+  }
+
+  .ff-trend-chart svg {
+    height: 95px;
+  }
+
+  .ff-x-labels {
+    font-size: 8px;
+  }
+
+  .ff-decision-grid {
+    gap: 8px;
+  }
+
+  .ff-decision-card {
+    padding: 10px;
+    gap: 8px;
+    border-radius: 9px;
+  }
+
+  .ff-decision-card svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ff-decision-card h4 {
+    font-size: 11px;
+  }
+
+  .ff-decision-card p {
+    font-size: 9px;
+    margin: 3px 0 8px;
+  }
+
+  .ff-decision-card button {
+    font-size: 9px;
+    padding: 6px;
+  }
+
+  .ff-advice-grid {
+    gap: 7px;
+  }
+
+  .ff-advice-card {
+    min-height: 112px;
+    border-radius: 9px;
+  }
+
+  .ff-advice-text {
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+  }
+
+  .ff-advice-text svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ff-advice-text h4 {
+    font-size: 10px;
+  }
+
+  .ff-advice-text p {
+    font-size: 8px;
+  }
+
+  .ff-misinfo-content {
+    grid-template-columns: 115px 1fr 1.1fr;
+    gap: 10px;
+  }
+
+  .ff-donut {
+    width: 95px;
+    height: 95px;
+  }
+
+  .ff-donut span {
+    font-size: 9px;
+  }
+
+  .ff-donut b {
+    font-size: 13px;
+  }
+
+  .ff-platform-row,
+  .ff-theme-row {
+    font-size: 9px;
+  }
+
+  .ff-theme-box {
+    padding: 8px;
+  }
+
+  .ff-theme-box h4 {
+    font-size: 10px;
+  }
+
+  .ff-theme-row {
+    grid-template-columns: 1fr 70px 32px;
+    gap: 6px;
+  }
+
+  .footer {
+    padding: 16px;
+    border-radius: 12px;
+    gap: 16px;
+  }
+
+  .footer h4 {
+    font-size: 13px;
+  }
+
+  .footer p,
+  .footer a,
+  .footer li {
+    font-size: 11px;
+  }
+}
