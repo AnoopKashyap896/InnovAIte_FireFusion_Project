@@ -12,14 +12,18 @@ import {
   Droplets,
   Eye,
   ChevronRight,
+  BarChart3,
 } from "lucide-react";
 
+import { useNavigate, useLocation } from "react-router-dom";
+
 const menuItems = [
-  { label: "Dashboard", icon: Home, badge: null, active: true },
+  { label: "Dashboard", icon: Home, badge: null, path: "/dashboard" },
   { label: "Fire Map", icon: Map, badge: "7" },
   { label: "Alerts", icon: TriangleAlert, badge: "31" },
   { label: "Misinformation Review", icon: Shield, badge: "14" },
   { label: "Reports", icon: FileText, badge: null },
+  { label: "Analytics", icon: BarChart3, badge: null, path: "/analytics" },
 ];
 
 function InfoBox({ icon: Icon, title, value }) {
@@ -33,6 +37,9 @@ function InfoBox({ icon: Icon, title, value }) {
 }
 
 export default function Sidebar() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <aside className="sidebar">
       <div className="brand">
@@ -48,14 +55,22 @@ export default function Sidebar() {
       <nav className="nav-list">
         {menuItems.map((item) => {
           const Icon = item.icon;
+          const active =
+            location.pathname === item.path ||
+            (location.pathname === "/" && item.path === "/dashboard");
+
           return (
-            <button key={item.label} className={`nav-item ${item.active ? "active" : ""}`}>
+            <button
+              key={item.label}
+              className={`nav-item ${active ? "active" : ""}`}
+              onClick={() => item.path && navigate(item.path)}
+            >
               <span>
                 <Icon size={17} />
                 {item.label}
               </span>
               {item.badge && <b>{item.badge}</b>}
-              {item.active && <ChevronRight size={16} />}
+              {active && <ChevronRight size={16} />}
             </button>
           );
         })}
